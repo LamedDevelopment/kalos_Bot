@@ -1,0 +1,10 @@
+import { Document, Schema } from 'mongoose';
+
+export interface ChatInteraction extends Document {
+    userId: string;
+    userName: string;
+    userPhoneNumber: string;
+    botResponse: string;
+    userMessage: string;
+    timestamp: string;
+}

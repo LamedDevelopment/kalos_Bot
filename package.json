@@ -1,0 +1,41 @@
+{
+    "name": "Api-WT-Kalos",
+    "version": "1.0.0 Alpha",
+    "description": "",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "dev": "node ./node_modules/tsx/dist/cli.cjs ./src/index.ts",
+        "build": "node ./node_modules/rollup/dist/bin/rollup -c",
+        "start": "node dist/index.js"
+    },
+    "keywords": [],
+    "dependencies": {
+        "@bot-whatsapp/bot": "0.1.38",
+        "@bot-whatsapp/cli": "latest",
+        "@bot-whatsapp/portal": "latest",
+        "@bot-whatsapp/provider": "latest",
+        "@whiskeysockets/baileys": "^6.7.2",
+        "bot-ws-plugin-openai": "^1.0.6",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "mongodb": "^6.6.1",
+        "mongoose": "^8.3.4",
+        "openai": "^4.42.0",
+        "paypal-rest-sdk": "^1.8.1",
+        "wa-sticker-formatter": "4.4.4"
+    },
+    "author": "Lamed Development",
+    "license": "ISC",
+    "devDependencies": {
+        "@bot-whatsapp/database": "^0.1.35",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@types/express": "^4.17.21",
+        "@types/mongoose": "^5.11.97",
+        "@types/node": "^20.12.10",
+        "rollup": "^4.17.2",
+        "rollup-plugin-typescript2": "^0.36.0",
+        "tsx": "^4.9.3"
+    }
+}
